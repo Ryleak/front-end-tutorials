@@ -88,6 +88,57 @@ li a {
 li a:hover {
   background-color: #111111;
 }
-  */
 
+div.mycontainer {
+  width:100%;
+  overflow:auto;
+}
+div.mycontainer div {
+  width:33%;  
+  float:left;
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+}
+  */
+  div.my-container{
+    width: 100%;
+    overflow: auto;
+  }
+  div.my-container div{
+    width: 33%;
+    float: left;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+  }
+
+  .city{
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .note{
+    font-size: 120%;
+    color: red;
+  }
+
+  #myHeader{
+    background-color: lightblue;
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
 

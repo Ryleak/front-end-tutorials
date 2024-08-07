@@ -2,9 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!--Setting the viewport to make your website look good on all devices.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Define a description on your web page:" />
+    <meta
+      name="keywords"
+      content="Define keywords for search engines: html, css, js "
+    />
+    <meta name="author" content="MAK" />
     <link rel="stylesheet" href="style/styles.css" />
-
+    <!--Specify a default URL and a default target fot all links on page..
+    <base href="https://w3schools.com" target="_blank"> 
+-->
     <!--HTML TITLE
     <Favicon : Sekmedeki simge-->
     <title>HTML Tutorials</title>
@@ -686,53 +695,267 @@
       <li><a href="#contact">Contact</a></li>
       <li><a href="#about">About</a></li>
     </ul>
-  </body>
 
-  <hr />
-  <h1>HTML ordered list</h1>
-  <ol type="I">
-    <li>Coffee</li>
-    <li>Milk</li>
-    <li>Tea</li>
-  </ol>
+    <hr />
+    <h1>HTML ordered list</h1>
+    <ol type="I">
+      <li>Coffee</li>
+      <li>Milk</li>
+      <li>Tea</li>
+    </ol>
 
-  <ol start="50">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-  </ol>
-  <hr />
-  <h1>HTML Block and Inline Elements</h1>
-  <p>
-    A block-level element always starts on a new line, and the browsers
-    automatically add some space (a margin) before and after the element.
-    <br />A block-level element always takes up the full width available
-    (stretches out to the left and right as far as it can).
-  </p>
-
-  <p>
-    An inline element does not start on a new line. <br />
-
-    An inline element only takes up as much width as necessary. <br />
-
-    This is a element inside a paragraph.
-  </p>
-
-  <div style="background-color: black; color: white; padding: 20px">
-    <h2>London</h2>
+    <ol start="50">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <hr />
+    <h1>HTML Block and Inline Elements</h1>
     <p>
-      London is the capital city of England. It is the most populous city in the
-      United Kingdom, with a metropolitan area of over 13 million inhabitants.
+      A block-level element always starts on a new line, and the browsers
+      automatically add some space (a margin) before and after the element.
+      <br />A block-level element always takes up the full width available
+      (stretches out to the left and right as far as it can).
     </p>
-  </div>
 
-  <p>
-    My mother has <span style="color: blue; font-weight: bold">blue</span> eyes
-    and my father has
-    <span style="color: darkolivegreen; font-weight: bold">dark green</span>
-    eyes.
-  </p>
+    <p>
+      An inline element does not start on a new line. <br />
 
-  <hr>
-  <h1>HTML Div Element</h1>
+      An inline element only takes up as much width as necessary. <br />
+
+      This is a element inside a paragraph.
+    </p>
+
+    <div style="background-color: black; color: white; padding: 20px">
+      <h2>London</h2>
+      <p>
+        London is the capital city of England. It is the most populous city in
+        the United Kingdom, with a metropolitan area of over 13 million
+        inhabitants.
+      </p>
+    </div>
+
+    <p>
+      My mother has
+      <span style="color: blue; font-weight: bold">blue</span> eyes and my
+      father has
+      <span style="color: darkolivegreen; font-weight: bold">dark green</span>
+      eyes.
+    </p>
+
+    <hr />
+    <h1>HTML Div Element</h1>
+    <p>The div elements is used as a container for other HTML elements.</p>
+
+    <div style="width: 300px; margin: auto">
+      <h2>London</h2>
+      <p>London is the capital city of England.</p>
+      <p>London has over 13 million inhabitants.</p>
+    </div>
+
+    <p>
+      The CSS float property is used for positioning and formatting content and
+      allow elements float next to each other instead of on top of each other.
+    </p>
+    <div class="my-container">
+      <div style="background-color: #ff6347">
+        <h2>London</h2>
+      </div>
+      <div style="background-color: orange">
+        <h2>Oslo</h2>
+      </div>
+      <div style="background-color: aqua">
+        <h2>Rome</h2>
+      </div>
+    </div>
+
+    <p>
+      The CSS Grid Layout Module offers a grid-based layout system, with rows
+      and columns, making it easier to design web pages without having to use
+      floats and positioning.
+    </p>
+    <div class="grid-container">
+      <div style="background-color: #ff6347">
+        <h2>London</h2>
+      </div>
+      <div style="background-color: orange">
+        <h2>Oslo</h2>
+      </div>
+      <div style="background-color: aqua">
+        <h2>Rome</h2>
+      </div>
+    </div>
+    <hr />
+    <h1>HTML Class Attribute</h1>
+
+    <div class="city">London is the capital of England</div>
+    <div class="city">Paris is the capital of France</div>
+    <div class="city">Ankara is the capital of Turkey.</div>
+
+    <h1>My <span class="note">Important</span> Heading</h1>
+    <hr />
+
+    <h2>Use of The class Attribute in JavaScript</h2>
+    <p>Click the button to hide all elements with class name cities</p>
+    <button onclick="clearCities()">Hide cities elements</button>
+    <h3 class="cities">Ankara</h3>
+    <h3 class="cities">Paris</h3>
+    <h3 class="cities">London</h3>
+    <p>Click the button to show all elements with class name cities</p>
+    <button onclick="showCities()">Show cities elements</button>
+
+    <script>
+      function clearCities() {
+        var x = document.getElementsByClassName("cities");
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+      }
+
+      function showCities() {
+        var x = document.getElementsByClassName("cities");
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.display = "";
+        }
+      }
+    </script>
+    <hr />
+    <h1>HTML ID Attribute</h1>
+
+    <h2 id="myHeader">My Header</h2>
+
+    <h3>
+      A class name can be used by multiple HTML elements, while an id name must
+      only be used by one HTML element within the page:
+    </h3>
+
+    <h3 id="myChangeText">Hello World!</h3>
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+      function changeText() {
+        document.getElementById("myChangeText").innerHTML = "Have a nice day!";
+      }
+    </script>
+    <hr />
+
+    <h1>HTML IFrames</h1>
+
+    <iframe
+      src="https://www.w3schools.com/demo_iframe.htm"
+      name="iframe_a"
+      height="300px"
+      width="100%"
+      title="Iframe Example"
+    ></iframe>
+
+    <p>
+      <a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a>
+    </p>
+
+    <hr />
+    <h1>HTML - JavaScript</h1>
+
+    <button
+      type="button"
+      onclick="document.getElementById('showDateP').innerHTML = Date()"
+    >
+      Click me to display Date and Time
+    </button>
+    <p id="showDateP"></p>
+
+    <hr />
+    <h1>HMTL - The Head Element</h1>
+
+    <div style="border-style: groove">
+      <div>
+        <span class="tagnamecolor" style="color: brown"
+          ><span class="tagcolor" style="color: mediumblue">&lt;</span>meta<span
+            class="attributecolor"
+            style="color: red"
+          >
+            charset<span class="attributevaluecolor" style="color: mediumblue"
+              >="UTF-8"</span
+            ></span
+          ><span class="tagcolor" style="color: mediumblue">&gt;</span></span
+        >
+      </div>
+    </div>
+    <hr />
+    <h1>Semantic Elements in HTML</h1>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Tag</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><a href="/tags/tag_article.asp">&lt;article&gt;</a></td>
+          <td>Defines independent, self-contained content</td>
+        </tr>
+        <tr>
+          <td><a href="/tags/tag_aside.asp">&lt;aside&gt;</a></td>
+          <td>Defines content aside from the page content</td>
+        </tr>
+        <tr>
+          <td><a href="/tags/tag_details.asp">&lt;details&gt;</a></td>
+          <td>Defines additional details that the user can view or hide</td>
+        </tr>
+        <tr>
+          <td><a href="/tags/tag_figcaption.asp">&lt;figcaption&gt;</a></td>
+          <td>Defines a caption for a &lt;figure&gt; element</td>
+        </tr>
+        <tr>
+          <td><a href="/tags/tag_figure.asp">&lt;figure&gt;</a></td>
+          <td>
+            Specifies self-contained content, like illustrations, diagrams,
+            photos, code listings, etc.
+          </td>
+        </tr>
+        <tr>
+          <td><a href="/tags/tag_footer.asp">&lt;footer&gt;</a></td>
+          <td>Defines a footer for a document or section</td>
+        </tr>
+        <tr>
+          <td><a href="/tags/tag_header.asp">&lt;header&gt;</a></td>
+          <td>Specifies a header for a document or section</td>
+        </tr>
+        <tr>
+          <td><a href="/tags/tag_main.asp">&lt;main&gt;</a></td>
+          <td>Specifies the main content of a document</td>
+        </tr>
+        <tr>
+          <td><a href="/tags/tag_mark.asp">&lt;mark&gt;</a></td>
+          <td>Defines marked/highlighted text</td>
+        </tr>
+        <tr>
+          <td><a href="/tags/tag_nav.asp">&lt;nav&gt;</a></td>
+          <td>Defines navigation links</td>
+        </tr>
+        <tr>
+          <td><a href="/tags/tag_section.asp">&lt;section&gt;</a></td>
+          <td>Defines a section in a document</td>
+        </tr>
+        <tr>
+          <td><a href="/tags/tag_summary.asp">&lt;summary&gt;</a></td>
+          <td>Defines a visible heading for a &lt;details&gt; element</td>
+        </tr>
+        <tr>
+          <td><a href="/tags/tag_time.asp">&lt;time&gt;</a></td>
+          <td>Defines a date/time</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    <h1>HTML Forms</h1>
+
+      <form action="/#"></form>
+        <label for="fname">First name:</label>
+        <br>
+        <input type="text" id="fname" name="fname" value="Entry Text">
+        <br>
+        <label for="lname">Last Name:</label>
+        <br>
+
+  </body>
 </html>
