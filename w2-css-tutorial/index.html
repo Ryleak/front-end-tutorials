@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Tutorial</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/cec6203849.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>CSS How To</h1>
+
+    <h2>Cascading Order</h2>
+    <p>
+      All the styles in a page will "cascade" into a new "virtual" style sheet
+      by the following rules, where number one has the highest priority:
+    </p>
+    <ol>
+      <li>Inline style (inside an html element)</li>
+      <li>External and internel style sheets (in the head section)</li>
+      <li>Browser Default</li>
+    </ol>
+    <hr />
+    <h1>CSS Colors</h1>
+
+    <h2>CSS Background Color</h2>
+    <p style="background-color: tomato">Background Color Tomato</p>
+    <p style="color: blue">Text Color Blue</p>
+
+    <h2>CSS Border Color</h2>
+    <p style="border: 2px solid violet">Border Color</p>
+    <hr />
+    <h1>CSS Background</h1>
+
+    <h2>background-color-opacity</h2>
+    <p style="background-color: green; opacity: 0.4; color: red">
+      background-color-opacity
+    </p>
+
+    <h2>background-image</h2>
+    <div
+      style="
+        background-image: url(https://www.w3schools.com/html/workplace.jpg);
+      "
+    >
+      Some text. <br />
+      and more...
+    </div>
+    <hr />
+    <h1>CSS Border</h1>
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">A inset border.</p>
+    <p class="outset">A outset border.</p>
+    <p class="none">A none border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mixed">A mixed border.</p>
+    <p class="one">Some text</p>
+    <p class="three">Some text</p>
+    <p class="shorthand_1">Some text.</p>
+    <p class="border_radius">Some text.</p>
+
+    <hr />
+    <h1>CSS Margins</h1>
+    <p class="margins_1">
+      Margins are used to create space around elements, outside of any defined
+      borders.
+    </p>
+    <p class="margins_2">
+      50 px; Due to margin collapse, the actual margin ends up being 50px.
+    </p>
+    <p class="margins_3">20 px; Some text.</p>
+
+    <hr />
+    <h1>CSS Padding</h1>
+    <p class="paddings_1">
+      Padding is used to create space around an element's content, inside of any
+      defined borders.
+    </p>
+    <p class="paddings_2">300px width</p>
+    <p class="paddings_3">
+      The width of this div is 350px, even though it is defined as 300px in the
+      CSS.
+    </p>
+    <p class="paddings_4">
+      The width of this div remains at 300px, in spite of the 50px of total left
+      and right padding, because of the box-sizing: border-box property.
+    </p>
+    <hr />
+    <h1>CSS Box Model</h1>
+    <div class="divs_1">
+      This text is the content of the box. We have added a 50px padding, 20px
+      margin and a 15px green border. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+      sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+
+    <div>
+      The total width of an element should be calculated like this: <br />
+      Total element width = width + left padding + right padding + left border +
+      right border <br />
+      The total height of an element should be calculated like this: <br />
+      Total element height = height + top padding + bottom padding + top border
+      + bottom border
+    </div>
+    <hr />
+    <h1>CSS Outline</h1>
+    <p class="outlines_1">
+      This element has a 2px black border and a green outline with a width of
+      10px.
+    </p>
+    <p class="outlines_2">
+      This paragraph has an outline 15px outside the border edge.
+    </p>
+    <hr />
+    <h1>CSS Text</h1>
+
+    <div class="texts_1">
+      <h2>Text Formatting</h2>
+      <p>
+        This text is styled with some of the text formatting properties. The
+        heading uses the text-align, text-transform, and color properties. The
+        paragraph is indented, aligned, and the space between characters is
+        specified. The underline is removed from this colored
+        <a href="/" target="_blank">Try it Yourself</a> link.
+      </p>
+    </div>
+    <h2>Text Alignment</h2>
+    <p class="texts_2">
+      <b>text-align-last: right :</b> , consectetur adipiscing elit. Etiam
+      semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum
+      volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </p>
+    <p class="texts_3">
+      font-family: "Sofia", "sans-serif", consectetur adipiscing elit. Etiam
+      semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum
+      volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </p>
+    <p class="texts_4">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam
+      at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus
+      diam, consequat gravida libero rhoncus ut.
+    </p>
+    <hr />
+    <h1>Font Awesome icon library</h1>
+
+    <i class="fas fa-cloud"></i>
+    <i class="fas fa-heart"></i>
+    <i class="glyphicon glyphicon-cloud"></i>
+
+    <hr />
+    <h1>Stylinkg Links</h1>
+    <p>
+      <a class="links_1" href="/#" target="_blank">This link changes color</a>
+    </p>
+    <p>
+      <a class="links_2" href="/#" target="_blank"
+        >This link changes font-size</a
+      >
+    </p>
+    <p>
+      <a class="links_3" href="/#" target="_blank"
+        >This link changes background-color</a
+      >
+    </p>
+    <p>
+      <a class="links_4" href="/#" target="_blank"
+        >This link changes font-family</a
+      >
+    </p>
+    <p>
+      <a class="links_5" href="/#" target="_blank"
+        >This link changes text-decoration</a
+      >
+    </p>
+
+    <p>Mouse over the words to change the cursor.</p>
+    <span style="cursor: auto">auto</span><br />
+    <span style="cursor: crosshair">crosshair</span><br />
+    <span style="cursor: default">default</span><br />
+    <span style="cursor: e-resize">e-resize</span><br />
+    <span style="cursor: help">help</span><br />
+    <span style="cursor: move">move</span><br />
+    <span style="cursor: n-resize">n-resize</span><br />
+    <span style="cursor: ne-resize">ne-resize</span><br />
+    <span style="cursor: nw-resize">nw-resize</span><br />
+    <span style="cursor: pointer">pointer</span><br />
+    <span style="cursor: progress">progress</span><br />
+    <span style="cursor: s-resize">s-resize</span><br />
+    <span style="cursor: se-resize">se-resize</span><br />
+    <span style="cursor: sw-resize">sw-resize</span><br />
+    <span style="cursor: text">text</span><br />
+    <span style="cursor: w-resize">w-resize</span><br />
+    <span style="cursor: wait">wait</span><br />
+    <hr />
+    <h1>CSS Lists</h1>
+
+    <ul style="list-style-type: circle">
+      <li>Coffee</li>
+      <li>Tea</li>
+    </ul>
+
+    <ul style="list-style-type: square">
+      <li>Coffee</li>
+      <li>Tea</li>
+    </ul>
+
+    <ol style="list-style-type: upper-roman">
+      <li>Coffee</li>
+      <li>Tea</li>
+    </ol>
+
+    <ol style="list-style-type: lower-alpha">
+      <li>Coffee</li>
+      <li>Tea</li>
+    </ol>
+    <hr />
+    <h1>CSS Tables</h1>
+    <table id="tables_1">
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Mak</td>
+        <td>Kam</td>
+        <td>Turkey</td>
+      </tr>
+      <tr>
+        <td>Berglunds snabbköp</td>
+        <td>Christina Berglund</td>
+        <td>Sweden</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+    </table>
+    <hr />
+    <h1>CSS Layout</h1>
+
+    <h2>Display Property</h2>
+
+    <ul>
+      <li style="display: inline">HTML</li>
+      <li style="display: inline">CSS</li>
+      <li style="display: inline">JS</li>
+    </ul>
+    <span style="display: block">A display property with block span</span>
+    <span> a value of block</span>
+    <h2>Position Property</h2>
+    <div class="positions_1">
+      This div element has position: static (default);
+    </div>
+    <div class="positions_2">This div element has position: relative;</div>
+    <div class="positions_3">This div element has position: fixed;</div>
+    <div class="positions_4">This div element has position: absolute;</div>
+    <div class="positions_5">This div element has position: sticky;</div>
+    <h2>Overflow</h2>
+    <div id="overflowTest">
+      This text is really long and the height of its container is only 100
+      pixels. Therefore, a scrollbar is added to help the reader to scroll the
+      content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+      diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+      volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+      ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+      molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+      eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+      zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+      tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+      quod mazim placerat facer possim assum. Typi non habent claritatem
+      insitam; est usus legentis in iis qui facit eorum claritatem.
+    </div>
+    <h2>Float</h2>
+    <div class="floats_1">Div 1</div>
+    <div class="floats_2">Div 2</div>
+    <div class="floats_3">Div 3</div>
+    <br /><br />
+    <h1 style="clear: left">CSS Combinators</h1>
+    <p>There are four different combinantors in CSS:</p>
+    <ul>
+      <li>
+        div p <br />
+        descendant selector (space) The descendant selector matches all elements
+        that are descendants of a specified element.
+      </li>
+      <li>
+        div > p <br />
+        child selector (>) The child selector selects all elements that are the
+        children of a specified element.
+      </li>
+      <li>
+        div + p <br />
+        adjacent sibling selector (+) The adjacent sibling selector is used to
+        select an element that is directly after another specific element.
+      </li>
+      <li>
+        div ~ p <br />
+        general sibling selector (~) The general sibling selector selects all
+        elements that are next siblings of a specified element.
+      </li>
+    </ul>
+    <hr />
+    <h1>CSS Pseuodo classes</h1>
+
+    <div class="pseudos_1">
+      <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+      <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    </div>
+    <hr />
+    <h1>Responsive Top Nav</h1>
+
+    <ul class="navBars_1">
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="right"><a href="#about">About</a></li>
+    </ul>
+
+    <div style="padding: 0 16px">
+      <h2>Responsive Topnav Example</h2>
+      <p>
+        This example use media queries to stack the topnav vertically when the
+        screen size is 600px or less.
+      </p>
+      <p>
+        You will learn more about media queries and responsive web design later
+        in our CSS Tutorial.
+      </p>
+      <h4>Resize the browser window to see the effect.</h4>
+    </div>
+    <!--https://www.w3schools.com/css/img_mountains.jpg-->
+
+    <hr />
+    <h1>Attribute</h1>
+
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Selector</th>
+          <th style="width: 20%">Example</th>
+          <th>Example description</th>
+        </tr>
+        <tr>
+          <td><a href="/cssref/sel_attribute.php">[<i>attribute</i>]</a></td>
+          <td class="notranslate">[target]</td>
+          <td>Selects all elements with a target attribute</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/cssref/sel_attribute_value.php"
+              >[<i>attribute</i>=<i>value</i>]</a
+            >
+          </td>
+          <td class="notranslate">[target="_blank"]</td>
+          <td>Selects all elements with target="_blank"</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/cssref/sel_attribute_value_contains.php"
+              >[<i>attribute</i>~=<i>value</i>]</a
+            >
+          </td>
+          <td class="notranslate">[title~="flower"]</td>
+          <td>
+            Selects all elements with a title attribute that contains a
+            space-separated list of words, one of which is "flower"
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/cssref/sel_attribute_value_lang.php"
+              >[<i>attribute</i>|=<i>value</i>]</a
+            >
+          </td>
+          <td class="notranslate">[lang|="en"]</td>
+          <td>
+            Selects all elements with a lang attribute value starting with "en"
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/cssref/sel_attr_begin.php"
+              >[<i>attribute</i>^=<i>value</i>]</a
+            >
+          </td>
+          <td>a[href^="https"]</td>
+          <td>
+            Selects all &lt;a&gt; elements with a href attribute value starting
+            with "https"
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/cssref/sel_attr_end.php"
+              >[<i>attribute</i>$=<i>value</i>]</a
+            >
+          </td>
+          <td>a[href$=".pdf"]</td>
+          <td>
+            Selects all &lt;a&gt; elements with a href attribute value ending
+            with ".pdf"
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/cssref/sel_attr_contain.php"
+              >[<i>attribute</i>*=<i>value</i>]</a
+            >
+          </td>
+          <td>a[href*="w3schools"]</td>
+          <td>
+            Selects all &lt;a&gt; elements with a href attribute value
+            containing the substring "w3schools"
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Responsive Form</h2>
+
+    <div class="forms_1">
+      <form action="/#">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname_1">First Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname_1"
+              name="firstname"
+              placeholder="Your name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname_1">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="lname_1"
+              name="lastname"
+              placeholder="Your last name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country_1">Country</label>
+          </div>
+          <div class="col-75">
+            <select name="country" id="country_1">
+              <option value="turkey">Turkey</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject_1">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              name="subject"
+              id="subject_1"
+              placeholder="Write something."
+              style="height: 150px"
+            ></textarea>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
